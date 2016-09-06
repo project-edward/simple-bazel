@@ -6,8 +6,9 @@ confinement: strict
 
 apps:
   hello-world:
-    command: bazel-bin/hello_world
+    command: ./bazel-bin/hello_world
     daemon: simple
+    plugs: [network, network-bind]
 
 parts:
   hello-world:
