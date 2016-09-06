@@ -33,6 +33,10 @@ bazel*
 # Kernel items
 os/*
 
-# Vagrnat items
+# Vagrant items
 .vagrant/*
 *.log
+
+# Snapcraft items
+*.snap
+

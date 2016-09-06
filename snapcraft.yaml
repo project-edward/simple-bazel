@@ -1,0 +1,16 @@
+name: hello-world
+version: 0
+summary: Lets you print hello world
+description: Really simple script to test snapcraft with bazel
+confinement: strict
+
+apps:
+  hello-world:
+    command: bazel-bin/hello_world
+    daemon: simple
+
+parts:
+  hello-world:
+    plugin: bazel
+    source: https://github.com/project-edward/simple-bazel.git
+    command: hello_world
